@@ -2,6 +2,9 @@ from collections import defaultdict
 
 
 class Graph:
+    """
+    This class represents a graph constructed using adjacency lists.
+    """
     def __init__(self):
         """
         """
@@ -10,6 +13,13 @@ class Graph:
         self.nodes = set()
 
     def add_edge(self, from_node, to_node, weight):
+        """
+        This function adds an edge to the graph.
+
+        :param from_node: Start Node
+        :param to_node: End Node
+        :param weight: Weight of the
+        """
         # Edges are bidirectional or undirected.
         self.edges[from_node].append(to_node)
         self.edges[to_node].append(from_node)

@@ -31,7 +31,6 @@ class DataProcessor:
         :return: None
         """
         data_frame = pd.read_csv(path_to_csv_file, sep=delimiter, header=0)
-
         for row in data_frame.values.tolist():
             source, destination = row[0], row[1]
             if self.user_preference == UserPreference.TOLL_COST_SAVER:

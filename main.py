@@ -19,14 +19,13 @@ def main():
     source = sys.argv[3]
     destination = sys.argv[4]
 
-    print(file_path, user_preference, source, destination)
-
     if int(user_preference) == 1:
         user_preference = up.UserPreference.TRAVEL_TIME_SAVER
     elif int(user_preference) == 2:
         user_preference = up.UserPreference.TOLL_COST_SAVER
     elif int(user_preference) == 3:
         user_preference = up.UserPreference.IDEAL_WEATHER_SEEKER
+    print("User Preference", user_preference.name)
 
     # Read the file and create a graph
     data_proc_object = dp.DataProcessor(user_preference)
