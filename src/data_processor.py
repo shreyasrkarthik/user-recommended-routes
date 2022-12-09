@@ -1,6 +1,6 @@
 import pandas as pd
-from user_preference import UserPreference
-from graph import Graph
+from src.user_preference import UserPreference
+from src.graph import Graph
 
 
 class DataProcessor:

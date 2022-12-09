@@ -1,12 +1,15 @@
 import sys
 
-import data_processor as dp
-import shortest_path_algorithm as sp
-import user_preference as up
+from src import data_processor as dp
+from src import shortest_path_algorithm as sp
+from src import user_preference as up
 
 
 def main():
-
+    """
+    This script puts everything together and prints out the shortest path by user-preference.
+    :return:
+    """
     if len(sys.argv) < 5:
         print("Please provide the network file and user preference as command line arguments.")
         exit()
