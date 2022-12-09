@@ -1,0 +1,8 @@
+Source,Destination,Time To Travel,Toll Cost,Weather Condition
+A,B,4420,106,40
+B,C,3167,73,40
+A,D,1981,94,60
+B,D,971,93,20
+C,E,1750,74,100
+E,F,1338,106,80
+A,G,3555,60,100
